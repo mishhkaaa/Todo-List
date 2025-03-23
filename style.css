@@ -1,0 +1,162 @@
+body {
+    font-family: 'Arial', sans-serif; /* Changed to a more modern font */
+    background-color: #E0F7FA; /* Updated to a cooler color */
+    color: #004D40; /* Darker text for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dark-mode {
+    background-color: #121212; /* Dark background for dark mode */
+    color: #E0E0E0; /* Light text for better contrast in dark mode */
+}
+
+.dark-mode .todo-container {
+    background: #1E1E1E; /* Darker background for the todo container */
+    color: #E0E0E0; /* Light text for better contrast */
+}
+
+.dark-mode button {
+    background: #3A3A3A; /* Darker button background */
+    color: #E0E0E0; /* Light button text */
+}
+
+.dark-mode input[type="text"] {
+    background: #3A3A3A; /* Darker input background */
+    color: #E0E0E0; /* Light input text */
+}
+
+.dark-mode select {
+    background: #3A3A3A; /* Darker select background */
+    color: #E0E0E0; /* Light select text */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0px); }
+}
+
+.todo-container {
+    padding: 20px;
+    background: #FFFFFF; /* Changed to white for a cleaner look */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    width: 350px;
+    text-align: center;
+    display: flexbox; /* Corrected from flexbox to flex */
+    justify-content: space-around;
+    animation: fadeIn 0.6s ease-out;
+}
+
+#title {
+    color: #4b4034;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #13886e;
+    border-radius: 5px;
+    background: #afe5da;
+    color: #473333;
+}
+
+.editButton {
+    background: #00796B; /* Updated to match the existing button color */
+    padding: 10px 20px; /* Increased padding for better touch targets */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Separated transitions for clarity */
+}
+
+button {
+    background: #00796B; /* Updated to a more vibrant color */
+    padding: 10px 20px; /* Increased padding for better touch targets */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Separated transitions for clarity */
+}
+
+button:hover {
+    background: #695a4b;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+@keyframes taskFadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+ul li {
+    color: #004D40; /* Darker text for better contrast */
+    background: #B2DFDB; /* Updated to a lighter background for better visibility */
+    padding: 12px; /* Increased padding for better touch targets */
+    margin: 5px 0;
+    border-radius: 10px; /* Slightly reduced border radius for a modern look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Separated transitions for clarity */
+    animation: taskFadeIn 0.3s ease-out;
+}
+
+ul li:active {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+ul li.completed {
+    opacity: 0.6;
+}
+
+ul li.completed span {
+    text-decoration: line-through;
+}
+
+.deleteButton {
+    background: #8D7B68;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deleteButton:hover {
+    background: #5E503F;
+}
+
+.editButton{
+    align-content: flex-end;
+}
+
+.filter-container {
+    display: flex;
+    margin-top: 15px;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #004D40;
+    border-radius: 5px;
+    background: #9ddac5;
+    color: #004D40;
+}
