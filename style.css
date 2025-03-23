@@ -44,7 +44,10 @@ body {
     background: #FFFFFF; /* Changed to white for a cleaner look */
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
-    width: 350px;
+    width: 90%;
+    max-width: 500px;
+    min-height: 50vh;
+    height: auto;
     text-align: center;
     display: flexbox; /* Corrected from flexbox to flex */
     justify-content: space-around;
@@ -142,10 +145,6 @@ ul li.completed span {
 
 .deleteButton:hover {
     background: #5E503F;
-}
-
-.editButton{
-    align-content: flex-end;
 }
 
 .filter-container {
